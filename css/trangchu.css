@@ -9,6 +9,7 @@
     height: 35px;
 }
 header {
+    width: 100%;
     background-color: #FFF200;
 }
 li{
