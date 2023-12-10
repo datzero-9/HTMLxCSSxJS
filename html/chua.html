@@ -1,4 +1,5 @@
-*{
+<style>
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -56,77 +57,47 @@ li a {
     transition: 0.5s;
 }
 .container1 ul li:nth-child(3) i {
-   font-size: 20px; 
+  font-size: 20px; 
 }
 
 .container1 ul li:nth-child(4)  {
   position: relative; 
-  }
-  .container1 ul li:nth-child(4)  {
-  position: relative; 
-  }
-  .container1 ul li:nth-child(4) input  {
+}
+.container1 ul li:nth-child(4) input  {
     width: 250px;
     height: 35px;
     outline: none;
     border: none;
-    border-radius: 5px;
-  }
-  .container1 ul li:nth-child(4) button {
+}
+.container1 ul li:nth-child(4) i {
     cursor: pointer;
     position: absolute; 
-    font-size: 30px;
+    font-size: 20px;
     right: 0;
-    top: 2px;
-    border: none;
-    background-color: #FFFFFF;
-  }
-  .search-ajax {
-    position: relative;
-  }
-
-  .search-ajax .display-ajax {
-    width: 250px;
-    position: absolute;
-    z-index: 2;
-    border: 1px solid #333;
-    background-color: #FFFFFF;
-  }
-  .search-ajax .display-ajax .around {
-    border:1px solid #333;
-    margin: 3px 10px;
-  }
-  .search-ajax .display-ajax a {
-    display: flex;
-    align-items:center;
-  }
-  .search-ajax .display-ajax a img {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-  }
- .container1 ul li:nth-child(5):hover {   
+    top: 5px;
+}
+.container1 ul li:nth-child(5):hover {   
     background-color: #f6c960;
     cursor: pointer;
     transition: 0.5s;
-   
+  
 }
- .container1 ul li:nth-child(5) i {
-   font-size: 20px;
-   margin-right: 10px;
- }
- .container1 ul li:nth-child(6):hover {
+.container1 ul li:nth-child(5) i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.container1 ul li:nth-child(6):hover {
     background-color: #f8ba2b;
     cursor: pointer;
     transition: 0.5s;
 }
- .container1 ul li:nth-child(6)  {
+.container1 ul li:nth-child(6)  {
     display: flex;
     justify-content: center;
     padding: 8px;
 
   }
- .container1 ul li:nth-child(6) i {
+.container1 ul li:nth-child(6) i {
     text-align: center;
     font-size: 20px;  
   }
@@ -145,7 +116,7 @@ li a {
   .container1 ul li:nth-child(8) i {
     font-size: 23px;
   }
- 
+
   .container2 ul {
     display: flex;
     justify-content: center;
@@ -268,7 +239,7 @@ li a {
     display: flex;
     justify-content: space-between;
     width: 100%;
-   
+  
   }
   .slider-content-left-top-btn i{
     color: #333;
@@ -298,12 +269,12 @@ position: absolute;
 
 .slider-content-left-top a:nth-child(3) img {
     transform: translateX(200%);
- }
-  .slider-content-left-top a:nth-child(4) img {
-   transform: translateX(300%);
 }
- .slider-content-left-top a:nth-child(5) img {
- transform: translateX(400%);
+  .slider-content-left-top a:nth-child(4) img {
+  transform: translateX(300%);
+}
+.slider-content-left-top a:nth-child(5) img {
+transform: translateX(400%);
 }
 .slider-content-left-top-container  {
   position: relative;
@@ -315,3 +286,61 @@ position: absolute;
 .slider-content-left-top {
     transition: 0.5s;
 }
+</style>
+<header>
+<nav class="notice">
+<img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/11/banner/BIG-1200-44-1200x44.png"
+    alt="">
+</nav>
+<div class="container container1">
+<ul style="padding: 0;">
+    <li><a href="{{route('index')}}"> <img
+                src="https://www.thegioididong.com/ContentMwg/images/TGDD/Store/background_sieu_thi_tgdd.png"
+                alt=""></a></li>
+    <li>
+        <a href="">Đà nẵng <i class='bx bxs-down-arrow'></i> </a>
+    </li>
+    <li><a href="">Danh mục</a> <i class='bx bx-grid'></i></li>
+    <li><input type="text" placeholder="tìm kiếm sản phẩm"><i class='bx bx-search-alt-2'></i></li>
+    <li class="d-flex align-items-center">
+        <i class='bx bx-phone-call'></i>
+        <a href="">Gọi mua hàng <br>0356031160</a>
+    </li>
+    <li><a href="{{route('cart.index')}}">Giỏ hàng </a><i class='bx bx-cart-alt'></i></li>
+    <li>
+        <select name="" id="">
+            <option value="0"><a href="">Cửa hàng</a> <i class='bx bxs-chevron-down'></i></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </select>
+    </li>
+    <li><a href=""><i class='bx bxs-user-circle'></i></a></li>
+</ul>
+</div>
+<hr style="margin: 0; top: 0;">
+<nav class="container container2">
+<ul style="padding: 0; margin: 0 0 2px 0;">
+    <li>
+        <a href="">Laptop <i class='bx bx-laptop'></i></a>
+        <div class="submenu">
+            <ul style="margin: 0; padding: 0;">
+                <li><a href=""><b>Phụ kiện a</b></a></li>
+                <li><a href=""><b>Phụ kiện a</b></a></li>
+                <li><a href=""><b>Phụ kiện a</b></a></li>
+                <li><a href=""><b>Phụ kiện a</b></a></li>
+                <li><a href=""><b>Phụ kiện a</b></a></li>
+                <li><a href=""><b>Phụ kiện a</b></a></li>
+
+            </ul>
+        </div>
+
+    </li>
+    <li><a href="">Màn hình <i class='bx bx-tv'></i></a> </li>
+    <li><a href="">Bàn phím <i class='bx bxs-keyboard'></i></a> </li>
+    <li><a href="">Chuột <i class='bx bx-mouse-alt'></i></a> </li>
+    <li><a href="">Tai nghe <i class='bx bx-headphone'></i></a> </li>
+    <li><a href="">Sản phẩm khác...</a></li>
+</ul>
+</nav>
+</header>
